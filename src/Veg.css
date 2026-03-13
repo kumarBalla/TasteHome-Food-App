@@ -1,0 +1,107 @@
+/* Container small side gap */
+.container-fluid {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+/* Custom card styling */
+.custom-card {
+  /* border: 1px solid #222; */
+  /* border-radius: 20px; */
+  border-radius: 20px 20px 0px 0px;
+    /* background-color: #ff0000; */
+   box-shadow: 0 4px 14px rgba(0, 255, 153, 0.25); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 440px; /* bigger card */
+}  
+
+.custom-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(0, 255, 153, 0.4);
+}
+
+/* Card image */
+.custom-img {
+  border-radius: 18px 18px 0px 0px;
+  height: 220px;
+  object-fit: cover;
+  /* border-radius: 10px; */
+  /* background-color: #111; */
+  /* padding: 6px; */
+}
+
+/* Title */
+.card-title {
+  font-size: 1.3rem;
+  color: #00ffcc;
+}
+
+/* Description */
+.card-text {
+  font-size: 1rem;
+  color: #000000;
+  min-height: 60px;
+}
+
+/* Price */
+.card h6 {
+  color: red;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Add to cart button */
+.btn-success {
+  background-color: orange;
+  border: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-success:hover {
+  background-color: rgb(181, 142, 68);
+  color: #000;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 25px;
+  gap: 12px;
+}
+
+.pagination button {
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #222;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #00ff99;
+  color: #000;
+}
+
+.pagination button.active {
+  background-color: #00cc66;
+  color: #fff;
+  font-weight: bold;
+  border-color: #00cc66;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+footer {
+  background: #569164; /* Bootstrap success color */
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  max-width: 600px;
+  margin: 0 auto;
+}

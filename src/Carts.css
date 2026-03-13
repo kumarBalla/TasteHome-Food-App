@@ -1,0 +1,100 @@
+/* Cart Items Container */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+/* Individual Cart Item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  gap: 20px;
+}
+.cart-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Left Side (Image + Info) */
+.cart-item .left {
+  display: flex;
+  align-items: center;
+  flex: 2;
+  gap: 15px;
+}
+
+/* Cart Item Image */
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Product Info */
+.cart-item .info {
+  flex: 1;
+}
+.cart-item h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 600;
+}
+.cart-item p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 4px 0 0;
+}
+
+/* Right Side (Quantity + Remove) */
+.cart-item .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* spread items */
+  gap: 20px;
+
+  flex: 2;            /* make it take more space */
+  min-width: 250px;   /* 👈 ensures it's visibly bigger */
+  background: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+/* Quantity Controls */
+.cart-item .quantity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cart-item .quantity button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+.cart-item .quantity button:hover {
+  background: #ddd;
+}
+
+/* Remove Button */
+.cart-item .remove {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cart-item .remove:hover {
+  background: darkred;
+}

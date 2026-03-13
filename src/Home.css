@@ -1,0 +1,143 @@
+/* -----------------------------------
+   🎥 Video Hero Section
+----------------------------------- */
+.video-section {
+  position: relative;
+  width: 100vw;                      /* Full viewport width */
+  height: 600px;                     /* Keep original height */
+  overflow: hidden;
+  margin-left: calc(-50vw + 50%);   /* Expand to left and right beyond container */
+  margin-bottom: 100px;             /* ✅ Add space below the video section */
+}
+
+.video-bg {
+  width: 100vw;                      /* Full viewport width */
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 60%;                          /* ✅ Move overlay text slightly lower */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  z-index: 2;
+}
+
+
+
+/* -----------------------------------
+   🌟 Hero Carousel
+----------------------------------- */
+.hero-img {
+  height: 550px;
+  object-fit: cover;
+  filter: brightness(85%);
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 15px 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+.home-heading {
+  color: #2c3e50;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* -----------------------------------
+   🍱 Category Cards
+----------------------------------- */
+.category-card {
+  border-radius: 16px;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.category-img {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.category-title {
+  color: #34495e;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.category-btn {
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.category-btn:hover {
+  background: #00c48c;
+  color: #fff;
+  border-color: #00c48c;
+}
+
+/* -----------------------------------
+   🚀 Premium Scrolling Marquee
+----------------------------------- */
+.premium-marquee {
+  background: linear-gradient(90deg, #2c3e50, #34495e);
+  padding: 20px 0;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  animation: scroll-marquee 30s linear infinite;
+}
+
+.marquee-img {
+  width: 150px;          /* 🔹 fixed width */
+  height: 100px;         /* 🔹 fixed height */
+  object-fit: cover;     /* 🔹 keeps aspect ratio, crops if needed */
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(255,255,255,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.marquee-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(255,255,255,0.4);
+}
+
+@keyframes scroll-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* -----------------------------------
+   ⭐ Customer Reviews
+----------------------------------- */
+.reviewer-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #f1c40f;
+}

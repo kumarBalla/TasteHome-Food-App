@@ -1,0 +1,55 @@
+/* 🔹 Page container */
+.container {
+  max-width: 1000px;
+}
+
+/* 🔹 Order cards */
+.card {
+  border: none;
+  border-radius: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* 🔹 Card title */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* 🔹 Date & total text */
+.text-muted strong {
+  color: #333;
+}
+
+/* 🔹 Items list */
+.list-group-item {
+  border: none;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+}
+
+.list-group-item:nth-child(odd) {
+  background-color: #f9fafc;
+}
+
+.list-group-item span:first-child {
+  color: #444;
+}
+
+.list-group-item span:last-child {
+  color: #2c7a7b;
+  font-weight: 600;
+}
+
+/* 🔹 Empty cart alert */
+.alert-info {
+  font-size: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
